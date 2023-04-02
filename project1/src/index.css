@@ -1,30 +1,75 @@
-.card {
-  background-color: #eee;
-  height: 250px;
-  width: 600px;
-  margin: 20px 20px;
-  position: relative;
-  border-radius: 10px;
-}
-.card h2 {
-  margin: 20px;
-  font-size: 40px;
-}
-.btn {
-  background-color: steelblue;
-  color: #eee;
-  border: 3px solid #fff;
-  position: absolute;
-  left: 475px;
-  top: 175px;
-  cursor: pointer;
-  padding: 10px 20px;
-  font-size: 20px;
-  border-radius: 10px;
-  /* margin-top: 60px;
-  margin-left: 475px; */
+* {
+  box-sizing: border-box;
 }
 
-.btn:active {
-  transform: scale(0.9);
+body {
+  font-family: sans-serif;
+  margin: 3rem;
+  background-color: #dfdfdf;
+}
+
+h1,
+h2 {
+  color: #333333;
+}
+
+.btn {
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #0c17ac;
+  color: white;
+  border: 1px solid #2006b3;
+  margin: 0 1rem;
+}
+
+.btn:hover {
+  background-color: #4650da;
+  border-color: rgb(154, 138, 243);
+}
+
+.btn--alt {
+  background-color: transparent;
+  color: #0c17ac;
+}
+
+.btn--alt:hover {
+  background-color: #f8dae9;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  margin: 1rem;
+  width: 20rem;
+}
+
+.actions {
+  text-align: right;
+}
+
+.modal {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+  width: 30rem;
+  z-index: 10;
+  position: fixed;
+  top: 20vh;
+  left: calc(50% - 15rem);
+}
+
+.backdrop {
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
 }
