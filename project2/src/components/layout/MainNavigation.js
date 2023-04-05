@@ -13,9 +13,9 @@ function MainNavigation() {
           <li>
             <Link to="/new-meetup">Add New Meetups</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/favorites">My Favorites</Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>
