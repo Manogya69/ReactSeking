@@ -26,14 +26,16 @@ export function FavoritesContextProvider(props) {
   }
 
   const context = {
-    favorties: userFavorites,
+    favorites: userFavorites,
     totalFavorites: userFavorites.length,
     addFavorite: addFavoriteHandler,
     removeFavorite: removeFavoriteHandler,
     itemIsFavorite: itemIsFavoriteHandler,
   };
   return (
-    <FavoritesContext.Provider>{props.children}</FavoritesContext.Provider>
+    <FavoritesContext.Provider value={context}>
+      {props.children}
+    </FavoritesContext.Provider>
   );
 }
 export default FavoritesContext;
