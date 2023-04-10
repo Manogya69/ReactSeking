@@ -1,7 +1,9 @@
+// import { useState } from "react";
 import MeetupItem from "./MeetupItem";
 import classes from "./MeetupList.module.css";
 
 function MeetupList(props) {
+  // const [meetups, setMeetups] = useState([]);
   return (
     <ul className={classes.list}>
       {props.meetups.map((meetup) => (
