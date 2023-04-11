@@ -8,7 +8,7 @@ function FavoritesPage() {
   return (
     <section>
       <h1>My Favorites</h1>
-      <MeetupList meetups={favoritesCtx.favorties} />
+      <MeetupList meetups={favoritesCtx.favorites} />
     </section>
   );
 }

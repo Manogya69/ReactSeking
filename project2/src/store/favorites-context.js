@@ -4,8 +4,8 @@ const FavoritesContext = createContext({
   favorties: [],
   totalFavorites: 0,
   addFavorite: (favoriteMeetup) => {},
-  removeFavorite: (MeetupId) => {},
-  itemIsFavorite: (MeetupId) => {},
+  removeFavorite: (meetupId) => {},
+  itemIsFavorite: (meetupId) => {},
 });
 
 export function FavoritesContextProvider(props) {
