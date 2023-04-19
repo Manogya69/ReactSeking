@@ -3,7 +3,7 @@ import Card from "../UI/Card";
 import "./IngredientForm.css";
 
 const IngredientForm = React.memo((props) => {
-  const inputState = useState({ title: "", amount: "" });
+  const [inputState, setInputState] = useState({ title: "", amount: "" });
   const submitHandler = (event) => {
     event.preventDefault();
     // ...
